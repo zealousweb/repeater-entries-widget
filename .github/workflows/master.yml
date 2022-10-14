@@ -1,5 +1,5 @@
 name: Deploy to WordPress.org / SVN repository
-  uses: zealousweb/repeater-entries-widget@v1.5
+  uses: actions/checkout@master
   with:
     # The repository username.
     svn-username: ${{ secrets.SVN_PASSWORD }}
