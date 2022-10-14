@@ -13,7 +13,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: WordPress Plugin Deploy
-      uses: zealousweb/repeater-entries-widget@master
+      uses: actions/checkout@master
+      with:
+        repositories: zealousweb/repeater-entries-widget@master
       env:
         SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
         SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
