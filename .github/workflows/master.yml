@@ -17,6 +17,5 @@ jobs:
       with:
         token: ${{ secrets.TOKEN }}
         repositories: zealousweb/repeater-entries-widget@master
-      env:
         SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
         SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
