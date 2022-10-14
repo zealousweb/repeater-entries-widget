@@ -16,6 +16,7 @@ jobs:
       uses: actions/checkout@master
       with:
         token: ${{ secrets.TOKEN }}
-        repositories: zealousweb/repeater-entries-widget@master
+        repository: zealousweb/repeater-entries-widget@master
+      env:
         SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
         SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
