@@ -7,13 +7,13 @@ on:
     - master
 
 jobs:
-  deploy-plugin:
-    name: Deploy Plugin
+  tag:
+    name: New tag
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
     - name: WordPress Plugin Deploy
-      uses: actions/checkout@v1.5
+      uses: actions/checkout@v3
       env:
         SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
         SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
