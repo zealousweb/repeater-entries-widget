@@ -1,22 +1,23 @@
-name: Deploy to WordPress.org
-on:
-  push:
-    tags:
-    - "*"
-    branches:
-    - master
-
-jobs:
-  tag:
-    name: New tag
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - name: WordPress Plugin Deploy
-      uses: actions/checkout@v3
-      env:
-        SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
-        SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
-        SLUG: repeater-entries-widget # optional, remove if GitHub repo name matches SVN slug, including capitalization
-        VERSION: 1.5
-        # This is a basic workflow to help you get started with Actions
+name: Deploy to WordPress.org / SVN repository
+  # You may pin to the exact commit or the version.
+  # uses: richard-muvirimi/deploy-wordpress-plugin@9ba1e4d13690f0e59638b33ebdd83e8e39a03342
+  uses: zealousweb/repeater-entries-widget@master
+  with:
+    # The repository username.
+    svn-username: ${{ secrets.SVN_PASSWORD }}
+    # The repository password.
+    svn-password: ${{ secrets.SVN_USERNAME }}
+    # The svn repository name (slug) of the plugin on WordPress.org. Can be a full url to use a custom repository. Defaults to git repository name if empty. Default empty.
+    plugin-repository: # optional, default is 
+    # Zip file name to generate, any custom text to name differently, "slug" (default) to use plugin slug.
+    plugin-zip: # optional, default is slug
+    # Folder name to use at root of zip, "slug" to use plugin slug, leave empty to disable.
+    plugin-zip-folder: # optional, default is 
+    # Tag for releasing to WordPress, any custom text to use a custom tag, "tag" to read from release tags, "readme" (default) to obtain from readme.txt.
+    plugin-version: # default is readme
+    # Commit message for releasing to WordPress, text to use a custom message, "git" (default) to use the last git commit message.
+    commit-message: # optional, default is git
+    # Working directory, defaults to $GITHUB_WORKSPACE if empty. All files in working directory will be committed, except "plugin-assets" directory. Default empty.
+    working-directory: # optional, default is 
+    # Directory containing plugin assets, defaults to ".wordpress-org", set empty to disable.
+    assets-directory: # optional, default is .wordpress-org
