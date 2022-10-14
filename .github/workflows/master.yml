@@ -1,6 +1,4 @@
 name: Deploy to WordPress.org / SVN repository
-  # You may pin to the exact commit or the version.
-  # uses: richard-muvirimi/deploy-wordpress-plugin@9ba1e4d13690f0e59638b33ebdd83e8e39a03342
   uses: zealousweb/repeater-entries-widget@master
   with:
     # The repository username.
