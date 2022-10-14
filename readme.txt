@@ -6,9 +6,9 @@ Donate link: http://www.zealousweb.com/payment/
 Requires at least: 3.0.1
 Tested up to: 6.0
 Requires PHP: 5.6
-Stable tag: 1.4
+Stable tag: 1.5
 License: GPLv3 or later License
-Version: 1.4
+Version: 1.5
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Repeater Entries Widget - Let users enter as many entries in widget as they wish with repeater fields like caption, description, image, etc.
