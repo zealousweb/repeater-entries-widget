@@ -70,6 +70,9 @@ No, video is not allowed in entries widget.
 
 == Changelog ==
 
+= 1.5 - 14/10/2022 =
+* Fix - Bug fixing.
+
 = 1.4 - 30/05/2022 =
 * Change - Tested in latest WP and make some design changes.
 
