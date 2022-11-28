@@ -4,7 +4,7 @@ Contributors: zealopensource
 Tags: widget, widgets, multiple, multiple rows, multiple entries, images, description, upload, repeat, repeated entries, sidebar, widget area, repeater widget, dynamic, dynamic fields, add field dynamically, widget fields, widget form fields, multiple widget, dynamic form fields, add new fields, add row, delete row, multiple rows widget
 Donate link: http://www.zealousweb.com/payment/
 Requires at least: 3.0.1
-Tested up to: 6.0
+Tested up to: 6.1.1
 Requires PHP: 5.6
 Stable tag: 1.5
 License: GPLv3 or later License
@@ -22,7 +22,7 @@ Repeater Entries Widget - Let users to enter as many entries as they want in wid
 *	Supports repeated entries with optional fields like caption, description, image, etc.
 *	External or internal links on caption, image.
 *	Target window can be choosed to open links.
-*	Read more button with full and short description. 
+*	Read more button with full and short description.
 *	Full description supports toggling of content for each entry.
 *	Manages alignment of content in left, right or center.
 *	Allows image resizing with full image, thumbnail, medium, large or custom options.
@@ -34,6 +34,18 @@ Repeater Entries Widget - Let users to enter as many entries as they want in wid
 
 PHP version : 5.3 and latest
 WordPress   : Wordpress 3.0 and latest
+
+== OUR OTHER PLUGINS ==
+
+* <strong>[Accept PayPal Payments Using Contact Form 7 Pro](https://www.zealousweb.com/store/accept-paypal-payments-using-contact-form-7-pro)</strong>
+* <strong>[Accept Stripe Payments Using Contact Form 7 Pro](https://www.zealousweb.com/store/accept-stripe-payments-using-contact-form-7-pro)</strong>
+* <strong>[Accept Authorize.NET Payments Using Contact Form 7 Pro](https://www.zealousweb.com/store/accept-authorize-net-payments-using-contact-form-7-pro)</strong>
+* <strong>[Accept Elavon Payments Using Contact Form 7 Pro](https://www.zealousweb.com/store/accept-elavon-payments-using-contact-form-7-pro)</strong>
+* <strong>[Accept 2Checkout Payments Using Contact Form 7 Pro](https://www.zealousweb.com/store/accept-2checkout-payments-using-contact-form-7-pro)</strong>
+* <strong>[Accept SagePay(opayo) Payments Using Contact Form 7 Pro](https://www.zealousweb.com/store/accept-sage-pay-payments-using-contact-form-7-pro)</strong>
+* <strong>[User Registration Using Contact Form 7 Pro](https://www.zealousweb.com/store/user-registration-using-contact-form-7-pro)</strong>
+* <strong>[Abandoned Contact Form 7 Pro](https://www.zealousweb.com/store/abandoned-contact-form-7-pro/)</strong>
+* <strong>[Custom Product Options WooCommerce Pro](https://www.zealousweb.com/store/custom-product-options-woocommerce-pro)</strong>
 
 == Installation ==
 1. Install "Repeater Entries Widget" either via the WordPress.org plugin directory, or by uploading the files to your server.
