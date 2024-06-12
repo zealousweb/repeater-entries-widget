@@ -1,14 +1,14 @@
 === Repeater Entries Widget ===
 
 Contributors: zealopensource
-Tags: widget, widgets, multiple, multiple rows, multiple entries, images, description, upload, repeat, repeated entries, sidebar, widget area, repeater widget, dynamic, dynamic fields, add field dynamically, widget fields, widget form fields, multiple widget, dynamic form fields, add new fields, add row, delete row, multiple rows widget
+Tags: widget, widgets, multiple
 Donate link: http://www.zealousweb.com/payment/
 Requires at least: 3.0.1
-Tested up to: 6.0
+Tested up to: 6.5
 Requires PHP: 5.6
-Stable tag: 1.5
+Stable tag: 1.4
 License: GPLv3 or later License
-Version: 1.5
+Version: 1.4
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Repeater Entries Widget - Let users enter as many entries in widget as they wish with repeater fields like caption, description, image, etc.
@@ -55,7 +55,7 @@ WordPress   : Wordpress 3.0 and latest
 
 = How to change the setting for Repeater Entries Widget ? =
 
-* Go to wordpress admin panel.
+* Go to wordpress admin panel. 
 * Select the "Settings" tab.
 * Then select the sub option of "Repeater Entries Widget".
 * Here you can setup the plugin options.
@@ -69,9 +69,6 @@ Up to 30 entries allowed for "Repeater Entries Widget".
 No, video is not allowed in entries widget.
 
 == Changelog ==
-
-= 1.5 - 14/10/2022 =
-* Fix - Bug fixing.
 
 = 1.4 - 30/05/2022 =
 * Change - Tested in latest WP and make some design changes.
