@@ -6,9 +6,9 @@ Donate link: http://www.zealousweb.com/payment/
 Requires at least: 3.0.1
 Tested up to: 6.5
 Requires PHP: 5.6
-Stable tag: 1.4
+Stable tag: 1.5
 License: GPLv3 or later License
-Version: 1.4
+Version: 1.5
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Repeater Entries Widget - Let users enter as many entries in widget as they wish with repeater fields like caption, description, image, etc.
@@ -69,6 +69,9 @@ Up to 30 entries allowed for "Repeater Entries Widget".
 No, video is not allowed in entries widget.
 
 == Changelog ==
+
+= 1.5 - 19/06/2024 =
+* Change - Improved compatibility with WordPress VIP platform by refactoring code to adhere to VIP coding standards.
 
 = 1.4 - 30/05/2022 =
 * Change - Tested in latest WP and make some design changes.
