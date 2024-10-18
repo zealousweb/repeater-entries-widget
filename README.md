@@ -18,6 +18,7 @@ Repeater Entries Widget – Let users to enter as many entries as they want in w
 **Plugin Requirement**
 
 PHP version : 5.3 and latest
+
 WordPress : WordPress 3.0 and latest
 
 # Installation
