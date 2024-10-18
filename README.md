@@ -15,6 +15,10 @@ Repeater Entries Widget – Let users to enter as many entries as they want in w
 - Easily manageable entries which are nicely arranged in accordion view.
 - Compatibility of WordPress VIP.
 
+**Plugin Requirement**
+PHP version : 5.3 and latest
+WordPress : WordPress 3.0 and latest
+
 # Installation
 1. Download the plugin zip file from WordPress.org plugin site to your desktop / PC
 2. If the file is downloaded as a zip archive, extract the plugin folder to your desktop.
