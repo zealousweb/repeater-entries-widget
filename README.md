@@ -1,6 +1,19 @@
 # Repeater Entries Widget
 Repeater Entries Widget – Let users to enter as many entries as they want in widget with repeater fields like caption, description, image, etc.
 
+**Repeater Entries Widget Features**
+
+- Supports repeated entries with optional fields like caption, description, image, etc.
+- External or internal links on caption, image.
+- Target window can be choosed to open links.
+- Read more button with full and short description.
+- Full description supports toggling of content for each entry.
+- Manages alignment of content in left, right or center.
+- Allows image resizing with full image, thumbnail, medium, large or custom options.
+- Multiple widgets can be added to any widget area.
+- Allows to add or remove entries from widget.
+- Easily manageable entries which are nicely arranged in accordion view.
+- Compatibility of WordPress VIP.
 
 # Installation
 1. Download the plugin zip file from WordPress.org plugin site to your desktop / PC
