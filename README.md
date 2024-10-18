@@ -16,6 +16,7 @@ Repeater Entries Widget – Let users to enter as many entries as they want in w
 - Compatibility of WordPress VIP.
 
 **Plugin Requirement**
+
 PHP version : 5.3 and latest
 WordPress : WordPress 3.0 and latest
 
