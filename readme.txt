@@ -4,11 +4,11 @@ Contributors: zealopensource
 Tags: widget, widgets, multiple
 Donate link: http://www.zealousweb.com/payment/
 Requires at least: 3.0.1
-Tested up to: 6.5
+Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 1.5
+Stable tag: 1.6
 License: GPLv3 or later License
-Version: 1.5
+Version: 1.6
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Repeater Entries Widget - Let users enter as many entries in widget as they wish with repeater fields like caption, description, image, etc.
@@ -29,7 +29,7 @@ Repeater Entries Widget - Let users to enter as many entries as they want in wid
 *	Multiple widgets can be added to any widget area.
 *	Allows to add or remove entries from widget.
 *	Easily manageable entries which are nicely arranged in accordion view.
-
+*       Compatibility of WordPress VIP.
 == Plugin Requirement ==
 
 PHP version : 5.3 and latest
@@ -69,6 +69,9 @@ Up to 30 entries allowed for "Repeater Entries Widget".
 No, video is not allowed in entries widget.
 
 == Changelog ==
+
+= 1.6 - 19/02/2025 =
+* Minor workflow adjustments.
 
 = 1.5 - 19/06/2024 =
 * Change - Improved compatibility with WordPress VIP platform by refactoring code to adhere to VIP coding standards.

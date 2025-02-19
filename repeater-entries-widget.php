@@ -3,7 +3,7 @@
  * Plugin Name: Repeater Entries Widget
  * Plugin URL: https://wordpress.org/plugins/repeater-entries-widget/
  * Description:  Let users to enter as many entries as they want in widget with repeater fields like title, description, image, etc.
- * Version: 1.5
+ * Version: 1.6
  * Author: ZealousWeb
  * Author URI: http://zealousweb.com
  * Developer: The Zealousweb Team
@@ -19,7 +19,7 @@
 /**
  *
  * @access public
- * @since  1.3
+ * @since  1.6
  * @return $content
  */
 
@@ -28,7 +28,7 @@ if (! defined('ABSPATH') ) {
 }
 
 if (!defined('ZWREW_VERSION') ) {
-    define('ZWREW_VERSION', '1.5'); // Version of plugin
+    define('ZWREW_VERSION', '1.6'); // Version of plugin
 }
 
 if (!defined('ZWREW_FILE') ) {
@@ -99,13 +99,11 @@ class ZWREW_Plugin extends WP_Widget
         $alignment   = esc_attr(get_option('content_align'));
 
         $title   = $before_title.apply_filters('widget_title', $instance['title']).$after_title;
-        echo $before_widget; //phpcs:ignore
-        echo $title; //phpcs:ignore
+        echo $before_widget;
+        echo $title;
         for($i=0; $i<$max_entries; $i++)
         {
-        if (isset($instance['block-' . $i])) {
             $block = $instance['block-' . $i];
-        }
             if(isset($block) && $block != "") {
                 //Caption
                 $caption = esc_attr($instance['caption-' . $i]);
@@ -166,22 +164,22 @@ class ZWREW_Plugin extends WP_Widget
                     $short_desc_button = '<a '.$button_target.'><button name="external_link">'.$button_title.'</button></a>';
                 }
                 ?>
-                <ul class="rew-entries" style="text-align:<?php echo $alignment; //phpcs:ignore ?>"> 
+                <ul class="rew-entries" style="text-align:<?php echo $alignment;?>">
                 <?php if(get_option('rew_caption') == 1 ) { ?>
-                    <li class="rew-caption"><strong><?php echo $caption; //phpcs:ignore ?></strong></li>
+                    <li class="rew-caption"><strong><?php echo $caption;?></strong></li>
                 <?php } ?>
                 <?php if(get_option('rew_image') == 1) { ?>
-                    <li class="rew-image"><?php echo $image; //phpcs:ignore?></li>
+                    <li class="rew-image"><?php echo $image;?></li>
                 <?php } ?>
                 <?php if(get_option('rew_description') == 'short') { ?>
-                    <li class="rew-short-desc"><?php echo $short_desc; //phpcs:ignore?></li>
-                    <li class="rew-shortdesc-btn"><?php echo $short_desc_button; //phpcs:ignore?></li>
+                    <li class="rew-short-desc"><?php echo $short_desc; ?></li>
+                    <li class="rew-shortdesc-btn"><?php echo $short_desc_button; ?></li>
                 <?php } else { ?>
-                    <li class="rew-full-desc half" id="full-desc-half<?php echo $i;?>"><?php echo $full_desc; //phpcs:ignore?></li>
-                    <li class="rew-full-desc" style="display:none;" id="full-desc-full<?php echo $i;?>"><?php echo wp_kses_post(apply_filters('the_content', $instance['full_desc-' . $i])); ?></li>
+                    <li class="rew-full-desc half" id="full-desc-half<?php echo $i;?>"><?php echo $full_desc; ?></li>
+                    <li class="rew-full-desc" style="display:none;" id="full-desc-full<?php echo $i;?>"><?php echo apply_filters('the_content', $instance['full_desc-' . $i]); ?></li>
                     <?php if(strlen($full_description) > 200) { ?>
                     <li>
-                    <button name="full_desc_button" class="full_desc_button" onclick="getDescription(<?php echo esc_js($i);?>);"><?php echo $button_title; //phpcs:ignore?></button>
+                    <button name="full_desc_button" class="full_desc_button" onclick="getDescription(<?php echo $i;?>);"><?php echo $button_title;?></button>
                     </li>
                     <?php }
                 } ?>
@@ -189,7 +187,7 @@ class ZWREW_Plugin extends WP_Widget
                 <?php
             }
         }
-        echo $after_widget; //phpcs:ignore
+        echo $after_widget;
     }
     //Function widget ends here
 
@@ -201,38 +199,38 @@ class ZWREW_Plugin extends WP_Widget
         $instance = array();
         $max_entries = get_option('rew_max');
         $max_entries = (empty($max_entries)) ? '5' : $max_entries;
-        $instance['title'] = wp_strip_all_tags($new_instance['title']);
+        $instance['title'] = strip_tags($new_instance['title']);
         for($i=0; $i<$max_entries; $i++){
             $block = $new_instance['block-' . $i];
             if($block == 0 || $block == "") {
                 $instance['block-' . $i] = $new_instance['block-' . $i];
-                $instance['caption-' . $i] = wp_strip_all_tags($new_instance['caption-' . $i]);
-                $instance['caption_link-' . $i] = wp_strip_all_tags($new_instance['caption_link-' . $i]);
-                $instance['image_uri-' . $i]   = wp_strip_all_tags($new_instance['image_uri-' . $i]);
-                $instance['alternate_text-' . $i]   = wp_strip_all_tags($new_instance['alternate_text-' . $i]);
-                $instance['size-' . $i]       = wp_strip_all_tags($new_instance['size-' . $i]);
-                $instance['width-' . $i]      = wp_strip_all_tags($new_instance['width-' . $i]);
-                $instance['height-' . $i]     = wp_strip_all_tags($new_instance['height-' . $i]);
-                $instance['image_link-' . $i] = wp_strip_all_tags($new_instance['image_link-' . $i]);
-                $instance['short_desc-' . $i] = wp_strip_all_tags($new_instance['short_desc-' . $i]);
-                $instance['short_desc_link-' . $i] = wp_strip_all_tags($new_instance['short_desc_link-' . $i]);
-                $instance['full_desc-' . $i]     = wp_strip_all_tags($new_instance['full_desc-' . $i]);
-                $instance['button_title-' . $i] = wp_strip_all_tags($new_instance['button_title-' . $i]);
+                $instance['caption-' . $i] = strip_tags($new_instance['caption-' . $i]);
+                $instance['caption_link-' . $i] = strip_tags($new_instance['caption_link-' . $i]);
+                $instance['image_uri-' . $i]   = strip_tags($new_instance['image_uri-' . $i]);
+                $instance['alternate_text-' . $i]   = strip_tags($new_instance['alternate_text-' . $i]);
+                $instance['size-' . $i]       = strip_tags($new_instance['size-' . $i]);
+                $instance['width-' . $i]      = strip_tags($new_instance['width-' . $i]);
+                $instance['height-' . $i]     = strip_tags($new_instance['height-' . $i]);
+                $instance['image_link-' . $i] = strip_tags($new_instance['image_link-' . $i]);
+                $instance['short_desc-' . $i] = strip_tags($new_instance['short_desc-' . $i]);
+                $instance['short_desc_link-' . $i] = strip_tags($new_instance['short_desc_link-' . $i]);
+                $instance['full_desc-' . $i]     = strip_tags($new_instance['full_desc-' . $i]);
+                $instance['button_title-' . $i] = strip_tags($new_instance['button_title-' . $i]);
             } else  {
                 $count = $block - 1;
                 $instance['block-' . $count] = $new_instance['block-' . $i];
-                $instance['caption-' . $count] = wp_strip_all_tags($new_instance['caption-' . $i]);
-                $instance['caption_link-' . $count] = wp_strip_all_tags($new_instance['caption_link-' . $i]);
-                $instance['image_uri-' . $count]   = wp_strip_all_tags($new_instance['image_uri-' . $i]);
-                $instance['alternate_text-' . $count]   = wp_strip_all_tags($new_instance['alternate_text-' . $i]);
-                $instance['size-' . $count]       = wp_strip_all_tags($new_instance['size-' . $i]);
-                $instance['width-' . $count]      = wp_strip_all_tags($new_instance['width-' . $i]);
-                $instance['height-' . $count]     = wp_strip_all_tags($new_instance['height-' . $i]);
-                $instance['image_link-' . $count] = wp_strip_all_tags($new_instance['image_link-' . $i]);
-                $instance['short_desc-' . $count] = wp_strip_all_tags($new_instance['short_desc-' . $i]);
-                $instance['short_desc_link-' . $count] = wp_strip_all_tags($new_instance['short_desc_link-' . $i]);
-                $instance['full_desc-' . $count]     = wp_strip_all_tags($new_instance['full_desc-' . $i]);
-                $instance['button_title-' . $count] = wp_strip_all_tags($new_instance['button_title-' . $i]);
+                $instance['caption-' . $count] = strip_tags($new_instance['caption-' . $i]);
+                $instance['caption_link-' . $count] = strip_tags($new_instance['caption_link-' . $i]);
+                $instance['image_uri-' . $count]   = strip_tags($new_instance['image_uri-' . $i]);
+                $instance['alternate_text-' . $count]   = strip_tags($new_instance['alternate_text-' . $i]);
+                $instance['size-' . $count]       = strip_tags($new_instance['size-' . $i]);
+                $instance['width-' . $count]      = strip_tags($new_instance['width-' . $i]);
+                $instance['height-' . $count]     = strip_tags($new_instance['height-' . $i]);
+                $instance['image_link-' . $count] = strip_tags($new_instance['image_link-' . $i]);
+                $instance['short_desc-' . $count] = strip_tags($new_instance['short_desc-' . $i]);
+                $instance['short_desc_link-' . $count] = strip_tags($new_instance['short_desc_link-' . $i]);
+                $instance['full_desc-' . $count]     = strip_tags($new_instance['full_desc-' . $i]);
+                $instance['button_title-' . $count] = strip_tags($new_instance['button_title-' . $i]);
             }
         }
         return $instance;
@@ -361,14 +359,14 @@ class ZWREW_Plugin extends WP_Widget
         ?>
         <script>
           jQuery(document).ready(function(e) {
-            jQuery.each(jQuery(".<?php echo esc_attr($widget_add_id); ?>-input-containers #entries").children(), function(){
+            jQuery.each(jQuery(".<?php echo $widget_add_id; ?>-input-containers #entries").children(), function(){
                 if(jQuery(this).find('input').val() != ''){
                     jQuery(this).show();
                 }
             });
-            jQuery(".<?php echo esc_attr($widget_add_id); ?>" ).bind('click', function(e) {
+            jQuery(".<?php echo $widget_add_id; ?>" ).bind('click', function(e) {
                 var rows = 0;
-                jQuery.each(jQuery(".<?php echo esc_attr($widget_add_id); ?>-input-containers #entries").children(), function(){
+                jQuery.each(jQuery(".<?php echo $widget_add_id; ?>-input-containers #entries").children(), function(){
                     if(jQuery(this).find('input').val() == ''){
                         jQuery(this).find(".entry-title").addClass("active");
                         jQuery(this).find(".entry-desc").slideDown();
@@ -383,7 +381,7 @@ class ZWREW_Plugin extends WP_Widget
                       jQuery(this).find(".entry-desc").slideUp();
                     }
                 });
-                if(rows == '<?php echo $max_entries; //phpcs:ignore?>') 
+                if(rows == '<?php echo $max_entries;?>')
                 {
                     jQuery("#rew_container #message").show();
                 }
@@ -400,7 +398,7 @@ class ZWREW_Plugin extends WP_Widget
                 jQuery('#entries #'+current+" .entry-title").removeClass('active');
                 jQuery('#entries #'+current+" .entry-desc").hide();
                 jQuery('#entries #'+current).remove();
-                jQuery.each(jQuery(".<?php echo esc_attr($widget_add_id); ?>-input-containers #entries").children(), function(){
+                jQuery.each(jQuery(".<?php echo $widget_add_id; ?>-input-containers #entries").children(), function(){
                     if(jQuery(this).find('input').val() != ''){
                         jQuery(this).find('input').first().val(count);
                     }
@@ -421,12 +419,12 @@ class ZWREW_Plugin extends WP_Widget
 
             #rew_container input,select,textarea{ float: right;width: 60%;}
             #rew_container label{width:40%;}
-        <?php echo '.'.esc_attr($widget_add_id); ?>{
+        <?php echo '.'.$widget_add_id; ?>{
             background: #ccc none repeat scroll 0 0;font-weight: bold;margin: 20px 0px 9px;padding: 6px;text-align: center;display:block !important; cursor:pointer;
             }
             .block-image{width:50px; height:30px; float: right; display:none;}
             .desc{height:55px;}
-            #entries #remove-img{background:url('<?php echo esc_url(ZWREW_URL);?>assets/images/deleteimg.png') center center no-repeat; width:20px; height:22px;display:none;}
+            #entries #remove-img{background:url('<?php echo ZWREW_URL;?>assets/images/deleteimg.png') center center no-repeat; width:20px; height:22px;display:none;}
             #entries{ padding:10px 0 0;}
             #entries .entrys{ padding:0; border:1px solid #e5e5e5; margin:10px 0 0; clear:both;}
             #entries .entrys:first-child{ margin:0;}
@@ -439,7 +437,7 @@ class ZWREW_Plugin extends WP_Widget
             #message{padding:6px;display:none;color:red;font-weight:bold;}
         </style>
         <div id="rew_container">
-        <?php echo $rew_html; //phpcs:ignore?> 
+        <?php echo $rew_html;?>
         </div>
         <?php
     } //Function form ends here
@@ -486,7 +484,7 @@ function zwrew_get_attachment_id( $attachment_url = '' )
     if (false !== strpos($attachment_url, $upload_dir_paths['baseurl']) ) {
         $attachment_url = preg_replace('/-\d+x\d+(?=\.(jpg|jpeg|png|gif)$)/i', '', $attachment_url);
         $attachment_url = str_replace($upload_dir_paths['baseurl'] . '/', '', $attachment_url);
-        $attachment_id = $wpdb->get_var($wpdb->prepare("SELECT wposts.ID FROM $wpdb->posts wposts, $wpdb->postmeta wpostmeta WHERE wposts.ID = wpostmeta.post_id AND wpostmeta.meta_key = '_wp_attached_file' AND wpostmeta.meta_value = '%s' AND wposts.post_type = 'attachment'", $attachment_url)); //phpcs:ignore
+        $attachment_id = $wpdb->get_var($wpdb->prepare("SELECT wposts.ID FROM $wpdb->posts wposts, $wpdb->postmeta wpostmeta WHERE wposts.ID = wpostmeta.post_id AND wpostmeta.meta_key = '_wp_attached_file' AND wpostmeta.meta_value = '%s' AND wposts.post_type = 'attachment'", $attachment_url));
     }
     return $attachment_id;
 }
