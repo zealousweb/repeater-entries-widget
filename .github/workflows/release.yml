@@ -20,7 +20,7 @@ jobs:
         env:
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
           SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
-          SLUG: user-registration-using-contact-form-7
+          SLUG: repeater-entries-widget
 
       - name: Upload release asset
         uses: actions/upload-release-asset@v1
@@ -28,6 +28,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ github.event.release.upload_url }}
-          asset_path: ${{github.workspace}}/user-registration-using-contact-form-7.zip
+          asset_path: ${{github.workspace}}/repeater-entries-widget.zip
           asset_name: ${{ github.event.repository.name }}.zip
           asset_content_type: application/zip
