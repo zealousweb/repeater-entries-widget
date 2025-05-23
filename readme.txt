@@ -4,7 +4,7 @@ Contributors: zealopensource
 Tags: widget, widgets, multiple
 Donate link: http://www.zealousweb.com/payment/
 Requires at least: 3.0.1
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 5.6
 Stable tag: 1.6
 License: GPLv3 or later License
@@ -29,7 +29,25 @@ Repeater Entries Widget - Let users to enter as many entries as they want in wid
 *	Multiple widgets can be added to any widget area.
 *	Allows to add or remove entries from widget.
 *	Easily manageable entries which are nicely arranged in accordion view.
-*       Compatibility of WordPress VIP.
+*   Compatibility of WordPress VIP.
+
+<strong>[Demo for Repeater Entries Widget](https://demo.zealousweb.com/wordpress-plugins/repeater-entries-widget/ )</strong>
+
+== OUR OTHER PLUGINS ==
+
+* <strong>[Abandoned Contact Form 7 Pro](https://store.zealousweb.com/wordpress-plugins/abandoned-contact-form-7-pro)</strong>
+* <strong>[Accept 2 Checkout Payments Using Contact Form 7 Pro](https://store.zealousweb.com/wordpress-plugins/accept-2checkout-payments-using-contact-form-7-pro)</strong>
+* <strong>[Accept Authorize.NET Payments Using Contact Form 7 Pro](https://store.zealousweb.com/wordpress-plugins/accept-authorize-net-payments-using-contact-form-7-pro)</strong>
+* <strong>[Accept Elavon Payments Using Contact Form 7 Pro](https://store.zealousweb.com/wordpress-plugins/accept-elavon-payments-using-contact-form-7-pro)</strong>
+* <strong>[Accept PayPal Payments Using Contact Form 7 Pro](https://store.zealousweb.com/wordpress-plugins/accept-paypal-payments-using-contact-form-7-pro)</strong>
+* <strong>[Accept Sagepay(Opayo) Payments Using Contact Form 7 Pro](https://store.zealousweb.com/wordpress-plugins/accept-sage-pay-opayo-payments-using-contact-form-7-pro)</strong>
+* <strong>[Accept Stripe Payments Using Contact Form 7 Pro](https://store.zealousweb.com/wordpress-plugins/accept-stripe-payments-using-contact-form-7-pro)</strong>
+* <strong>[Custom Product Options WooCommerce Pro](https://store.zealousweb.com/wordpress-plugins/custom-product-options-woocommerce-pro)</strong>
+* <strong>[Generate PDF Using Contact Form 7 Pro](https://store.zealousweb.com/wordpress-plugins/generate-pdf-using-contact-form-7-pro)</strong>
+* <strong>[Smart Appointment & Booking Pro](https://store.zealousweb.com/wordpress-plugins/smart-appointment-booking-pro)</strong>
+* <strong>[Smart Showcase for Google Reviews Pro](https://store.zealousweb.com/wordpress-plugins/smart-showcase-for-google-reviews-pro)</strong>
+* <strong>[User Registration Using Contact Form 7 Pro](https://store.zealousweb.com/wordpress-plugins/user-registration-using-contact-form-7-pro)</strong>
+
 == Plugin Requirement ==
 
 PHP version : 5.3 and latest
@@ -93,8 +111,23 @@ No, video is not allowed in entries widget.
 
 == Upgrade Notice ==
 
-= 1.1 =
-Bug fixing and remove unwanted code.
+= 1.6 - 19/02/2025 =
+* Minor workflow adjustments.
 
-= 1.2 =
-Bug fixing.
+= 1.5 - 19/06/2024 =
+* Change - Improved compatibility with WordPress VIP platform by refactoring code to adhere to VIP coding standards.
+
+= 1.4 - 30/05/2022 =
+* Change - Tested in latest WP and make some design changes.
+
+= 1.3 - 24/08/2020 =
+* Change - Donation link and author name updated.
+
+= 1.2 - 31/03/2020 =
+* Fix - Bug fixing.
+
+= 1.1 - 10/07/2019 =
+* Fix - Bug fixing and remove unwanted code.
+
+= 1.0 =
+* Initial Release
