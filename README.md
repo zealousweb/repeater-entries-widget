@@ -62,3 +62,6 @@ shows frontend view of repeated entries in with caption and short description fi
 # Getting Help
 
 If you have any difficulties while using this Plugin, please feel free to contact us at support@zealousweb.com. We also offer custom WordPress extension development and WordPress theme design services to fulfill your e-commerce objectives. Our professional dy‐ namic WordPress experts provide profound and customer-oriented development of your project within short timeframes. Thank you for choosing a Plugin developed by ZealousWeb!
+
+
+<!-- Security scan triggered at 2025-09-28 15:22:15 -->
