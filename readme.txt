@@ -4,11 +4,11 @@ Contributors: zealopensource
 Tags: widget, widgets, multiple
 Donate link: http://www.zealousweb.com/payment/
 Requires at least: 3.0.1
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 5.6
-Stable tag: 1.6
+Stable tag: 1.7
 License: GPLv3 or later License
-Version: 1.6
+Version: 1.7
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Repeater Entries Widget - Let users enter as many entries in widget as they wish with repeater fields like caption, description, image, etc.
@@ -19,17 +19,17 @@ Repeater Entries Widget - Let users to enter as many entries as they want in wid
 
 = Repeater Entries Widget Features =
 
-*	Supports repeated entries with optional fields like caption, description, image, etc.
-*	External or internal links on caption, image.
-*	Target window can be choosed to open links.
-*	Read more button with full and short description. 
-*	Full description supports toggling of content for each entry.
-*	Manages alignment of content in left, right or center.
-*	Allows image resizing with full image, thumbnail, medium, large or custom options.
-*	Multiple widgets can be added to any widget area.
-*	Allows to add or remove entries from widget.
-*	Easily manageable entries which are nicely arranged in accordion view.
-*   Compatibility of WordPress VIP.
+* Supports repeated entries with optional fields like caption, description, image, etc.
+* External or internal links on caption, image.
+* Target window can be choosed to open links.
+* Read more button with full and short description. 
+* Full description supports toggling of content for each entry.
+* Manages alignment of content in left, right or center.
+* Allows image resizing with full image, thumbnail, medium, large or custom options.
+* Multiple widgets can be added to any widget area.
+* Allows to add or remove entries from widget.
+* Easily manageable entries which are nicely arranged in accordion view.
+* Compatibility of WordPress VIP.
 
 <strong>[Demo for Repeater Entries Widget](https://demo.zealousweb.com/wordpress-plugins/repeater-entries-widget/ )</strong>
 
@@ -87,6 +87,9 @@ Up to 30 entries allowed for "Repeater Entries Widget".
 No, video is not allowed in entries widget.
 
 == Changelog ==
+
+= 1.7 - 16/12/2025 =
+* Tested with the latest version of WordPress (6.9).
 
 = 1.6 - 19/02/2025 =
 * Minor workflow adjustments.
