@@ -31,11 +31,26 @@ function zwrew_repeater_content_widget_setup_menu(){
 }
 
 /**
+ * enqueue script and style for plugin
+ */
+add_action( 'admin_enqueue_scripts', 'admin_zwrew_scripts',999 );
+function admin_zwrew_scripts() {
+	wp_enqueue_style( ZWREW_PREFIX . '-style-admin', ZWREW_URL .'assets/css/admin.css' );
+}
+
+/**
  * Initialize the plugin and display all options at admin side
  */
 function zwrew_repeater_content_widget_init(){
 	?>
-  <h1><?php echo esc_html_e( 'Repeater Entries Widget', ZWREW_TEXT_DOMAIN ); ?></h1>
+  <div class="zwrew-help-card">
+		<h1><?php echo esc_html_e( 'Repeater Entries Widget', ZWREW_TEXT_DOMAIN ); ?></h1>
+		<div class="zwrew-help-card-footer">
+			<a class="zwrew-primary-btn" href="https://support.zealousweb.com/portal/en/home" target="_blank" rel="noopener noreferrer">
+				<?php esc_html_e( 'Open Support Ticket', ZWREW_TEXT_DOMAIN ); ?>
+			</a>
+		</div>
+	</div>
   <form method="post" action="options.php">
 	<?php settings_fields( 'repeater-entries-widget-settings' ); ?>
 	<?php do_settings_sections( 'repeater-entries-widget-settings' ); ?>
