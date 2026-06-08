@@ -4,7 +4,7 @@ Contributors: zealopensource
 Tags: widget, widgets, multiple
 Donate link: http://www.zealousweb.com/payment/
 Requires at least: 3.0.1
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 5.6
 Stable tag: 1.7
 License: GPLv3 or later License
@@ -88,8 +88,8 @@ No, video is not allowed in entries widget.
 
 == Changelog ==
 
-= 1.7 - 16/12/2025 =
-* Tested with the latest version of WordPress (6.9).
+= 1.7 - 08/06/2026 =
+* Added a new "Open Support Ticket" button to provide quick and direct access to support.
 
 = 1.6 - 19/02/2025 =
 * Minor workflow adjustments.
